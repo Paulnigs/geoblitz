@@ -60,7 +60,7 @@ export function ModeSelection() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-cyan-50 to-sky-50">
       {/* Header */}
       <header className="p-4 flex items-center gap-4">
         <Button variant="ghost" size="icon" onClick={() => setScreen("home")}>
@@ -85,7 +85,7 @@ export function ModeSelection() {
             >
               <div
                 className={cn(
-                  "w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center mb-3",
+                  "w-12 h-12 rounded-xl bg-linear-to-br flex items-center justify-center mb-3",
                   mode.color,
                 )}
               >
@@ -150,7 +150,7 @@ export function ModeSelection() {
           <Button
             onClick={handleStartGame}
             disabled={!selectedMode}
-            className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25 disabled:opacity-50"
+            className="w-full h-14 text-lg font-semibold bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25 disabled:opacity-50"
           >
             Start Game
           </Button>

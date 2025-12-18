@@ -12,24 +12,6 @@ export const metadata: Metadata = {
     "Test your geography knowledge with GeoBlitz! A fast-paced quiz game featuring flags, capitals, country outlines, and map challenges.",
   keywords: ["geography", "quiz", "game", "flags", "capitals", "countries", "educational"],
   authors: [{ name: "GeoBlitz" }],
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 }
 
 export const viewport: Viewport = {

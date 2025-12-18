@@ -44,12 +44,12 @@ export function GameOverScreen() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col items-center justify-center p-4">
       {/* High Score Badge */}
       {isHighScore && (
         <div className="mb-6 animate-in zoom-in spin-in-180 duration-700">
           <div className="relative">
-            <div className="w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl shadow-amber-500/30">
+            <div className="w-24 h-24 bg-linear-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl shadow-amber-500/30">
               <Star className="w-12 h-12 text-white fill-white" />
             </div>
             <div className="absolute -top-1 -right-1 bg-rose-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
@@ -68,7 +68,7 @@ export function GameOverScreen() {
       <div className="w-full max-w-sm bg-white rounded-3xl shadow-xl p-6 mb-6 animate-in slide-in-from-bottom duration-500">
         {/* Main Score */}
         <div className="text-center mb-6">
-          <div className="text-6xl font-bold bg-gradient-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+          <div className="text-6xl font-bold bg-linear-to-r from-emerald-600 to-cyan-600 bg-clip-text text-transparent">
             {score}
           </div>
           <div className="text-slate-500 font-medium">points</div>
@@ -116,7 +116,7 @@ export function GameOverScreen() {
       <div className="w-full max-w-sm space-y-3 animate-in slide-in-from-bottom duration-700 delay-200">
         <Button
           onClick={handlePlayAgain}
-          className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
+          className="w-full h-14 text-lg font-semibold bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
         >
           <RotateCcw className="w-5 h-5 mr-2" />
           Play Again

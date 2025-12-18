@@ -27,7 +27,7 @@ export function LeaderboardScreen() {
   const sortedModes = (Object.entries(highScores) as [GameMode, number][]).sort((a, b) => b[1] - a[1])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-cyan-50 to-sky-50">
       {/* Header */}
       <header className="p-4 flex items-center gap-4">
         <Button variant="ghost" size="icon" onClick={() => setScreen("home")}>
@@ -38,7 +38,7 @@ export function LeaderboardScreen() {
 
       <main className="px-4 pb-8">
         {/* Overall Stats */}
-        <div className="bg-gradient-to-br from-amber-400 to-orange-500 rounded-3xl p-6 mb-6 text-white shadow-xl shadow-amber-500/25 animate-in slide-in-from-top duration-300">
+        <div className="bg-linear-to-br from-amber-400 to-orange-500 rounded-3xl p-6 mb-6 text-white shadow-xl shadow-amber-500/25 animate-in slide-in-from-top duration-300">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
               <Trophy className="w-8 h-8" />
@@ -107,7 +107,7 @@ export function LeaderboardScreen() {
         <div className="mt-8 animate-in fade-in duration-500 delay-500">
           <Button
             onClick={() => setScreen("modes")}
-            className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
+            className="w-full h-14 text-lg font-semibold bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
           >
             Play to Beat Your Scores!
           </Button>

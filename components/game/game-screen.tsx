@@ -112,7 +112,7 @@ export function GameScreen() {
   const timerPercentage = (timeRemaining / (difficulty === "hard" ? 5 : difficulty === "blitz" ? 3 : 10)) * 100
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col">
       {/* Confetti */}
       {showConfetti && <ConfettiEffect />}
 
@@ -232,9 +232,9 @@ export function GameScreen() {
               )}
             >
               {feedback === "correct" ? (
-                <Check className="w-14 h-14 text-white stroke-[3]" />
+                <Check className="w-14 h-14 text-white stroke-3" />
               ) : (
-                <X className="w-14 h-14 text-white stroke-[3]" />
+                <X className="w-14 h-14 text-white stroke-3" />
               )}
             </div>
             <span className={cn("text-2xl font-bold", feedback === "correct" ? "text-emerald-600" : "text-rose-600")}>

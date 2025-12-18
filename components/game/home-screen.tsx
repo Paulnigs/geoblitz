@@ -16,11 +16,11 @@ export function HomeScreen() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col">
+    <div className="min-h-screen bg-linear-to-br from-emerald-50 via-cyan-50 to-sky-50 flex flex-col">
       {/* Header */}
       <header className="p-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
             <Globe className="w-6 h-6 text-white" />
           </div>
           <span className="font-bold text-xl text-slate-800">GeoBlitz</span>
@@ -35,7 +35,7 @@ export function HomeScreen() {
         {/* Logo */}
         <div className="mb-8 animate-in zoom-in duration-500">
           <div className="relative">
-            <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-emerald-500 via-cyan-500 to-sky-500 flex items-center justify-center shadow-2xl shadow-emerald-500/25">
+            <div className="w-32 h-32 rounded-3xl bg-linear-to-br from-emerald-500 via-cyan-500 to-sky-500 flex items-center justify-center shadow-2xl shadow-emerald-500/25">
               <Globe className="w-16 h-16 text-white" />
             </div>
             <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-amber-400 flex items-center justify-center animate-pulse">
@@ -46,7 +46,7 @@ export function HomeScreen() {
 
         {/* Title */}
         <div className="text-center mb-8 animate-in slide-in-from-bottom duration-300">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-emerald-600 via-cyan-600 to-sky-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-5xl font-bold bg-linear-to-r from-emerald-600 via-cyan-600 to-sky-600 bg-clip-text text-transparent mb-2">
             GeoBlitz
           </h1>
           <p className="text-slate-500 text-lg">Test your geography knowledge!</p>
@@ -72,7 +72,7 @@ export function HomeScreen() {
         <div className="w-full max-w-sm space-y-3 animate-in slide-in-from-bottom duration-500 delay-200">
           <Button
             onClick={() => setScreen("modes")}
-            className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
+            className="w-full h-14 text-lg font-semibold bg-linear-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 shadow-lg shadow-emerald-500/25"
           >
             <Flag className="w-5 h-5 mr-2" />
             Play Now
